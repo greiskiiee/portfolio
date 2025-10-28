@@ -9,7 +9,7 @@ export const Navbar = () => {
       <h1 className="text-sm md:text-2xl font-bold text-[#374375]">
         {t.myname}
       </h1>
-      <div className="flex items-center space-x-2 md:space-x-6">
+      <div className="flex items-center space-x-2 md:space-x-6 text-sm md:text-lg">
         <a href="#about" className="text-[#374375] hover:text-[#89515a]">
           About
         </a>
