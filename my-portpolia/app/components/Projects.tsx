@@ -9,11 +9,13 @@ export const Projects = () => {
       title: "Tinder clone",
       desc: "A fun dating web app inspired by Tinder, where users can swipe to find matches and chat instantly once both sides like each other.",
       img: "/tinder.png",
+      link: "https://tinder-frontend-prod-iota.vercel.app/",
     },
     {
       title: "Movie web",
       desc: "A website that displays brief information and trailers of the latest movies released worldwide.",
       img: "/movieweb.png",
+      link: "https://leap-movie-app.vercel.app/",
     },
   ];
 
@@ -24,9 +26,12 @@ export const Projects = () => {
       </h2>
       <div className="grid md:grid-cols-2 gap-10">
         {projects.map((p, i) => (
-          <div
-            key={i}
-            className="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl transition"
+          <a
+            key={p.link ?? i}
+            href={p.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-xl transition block"
           >
             <Image
               src={p.img}
@@ -41,7 +46,7 @@ export const Projects = () => {
               </h3>
               <p className="text-[#374375]">{p.desc}</p>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>

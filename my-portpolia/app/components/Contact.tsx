@@ -1,4 +1,5 @@
 "use client";
+import { Facebook, Mail, Phone } from "lucide-react";
 import { useLang } from "../context/LanguageContext";
 
 export const Contact = () => {
@@ -9,12 +10,26 @@ export const Contact = () => {
         {t.contact_title}
       </h2>
       <p className="text-[#374375] mb-6">{t.contact_text}</p>
-      <a
-        href="mailto:youremail@example.com"
-        className="bg-[#dfaea0] text-white px-6 py-3 rounded-full hover:bg-[#895159]  transition"
-      >
-        {t.contact_button}
-      </a>
+      <div className="flex gap-2 justify-center items-center">
+        <a
+          href="mailto:chimgeebatuh@gmail.com"
+          className="flex gap-2 bg-[#dfaea0] text-white px-6 py-3 rounded-full hover:bg-[#895159]  transition"
+        >
+          <Mail />
+          chimgeebatuh@gmail.com
+        </a>
+        <a className="flex gap-2 bg-[#dfaea0] text-white px-6 py-3 rounded-full hover:bg-[#895159]  transition">
+          <Phone />
+          +976 80348383
+        </a>
+        <a
+          href="https://www.facebook.com/chmgeee.112"
+          className="flex gap-2 bg-[#dfaea0] text-white px-6 py-3 rounded-full hover:bg-[#895159]  transition"
+        >
+          <Facebook />
+          Б.Чимэг-Эрдэнэ
+        </a>
+      </div>
     </section>
   );
 };
