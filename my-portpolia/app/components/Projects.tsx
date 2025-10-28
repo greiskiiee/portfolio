@@ -7,12 +7,12 @@ export const Projects = () => {
   const projects = [
     {
       title: "Tinder clone",
-      desc: "A simple task manager built with React and TypeScript.",
+      desc: "A fun dating web app inspired by Tinder, where users can swipe to find matches and chat instantly once both sides like each other.",
       img: "/tinder.png",
     },
     {
       title: "Movie web",
-      desc: "Сүүлийн үеийн дэлхий дахинд нээлтээ хийсэн кинонуудын товч мэдээлэл, трайлерийг харуулах веб ",
+      desc: "A website that displays brief information and trailers of the latest movies released worldwide.",
       img: "/movieweb.png",
     },
   ];
