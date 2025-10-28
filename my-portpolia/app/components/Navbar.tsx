@@ -6,7 +6,7 @@ export const Navbar = () => {
 
   return (
     <nav className="flex justify-between items-center p-6 bg-[#fffcf5] shadow-md fixed w-full z-50">
-      <h1 className="text-small md:text-2xl font-bold text-[#374375]">
+      <h1 className="text-sm md:text-2xl font-bold text-[#374375]">
         {t.myname}
       </h1>
       <div className="flex items-center space-x-2 md:space-x-6">
